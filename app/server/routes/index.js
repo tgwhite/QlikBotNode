@@ -12,7 +12,7 @@ const path = require('path');
 // frontend routes =========================================================
 // route to handle all angular requests
 router.get('*', function(req, res) {
-	res.sendFile(path.join(__dirname, '../../public', 'index.htm')); // load our public/index.html file
+	res.sendFile(path.join(__dirname, '../../public', 'index.html')); // load our public/index.html file
 });
 
 module.exports = router;
