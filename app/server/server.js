@@ -61,7 +61,7 @@ function onError(error) {
 /**
  * Create HTTP/HTTPS server.
  */
-var certFolder = (process.env.NODE_ENV == 'development') ? 'localhost' : 'demosapi.qlik.com';
+var certFolder = (process.env.NODE_ENV == 'development') ? 'localhost' : 'localhost';
 var keyPath = path.join(__dirname, 'certs', certFolder, 'server_key.pem');
 var serverPath = path.join(__dirname, 'certs', certFolder, 'server.pem');
 const options = {
